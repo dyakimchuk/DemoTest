@@ -1,0 +1,18 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+      "target": "ES5",
+      "outDir": "compiled",
+      "sourceMap": true,
+      "declaration": false,
+      "moduleResolution": "node",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "typeRoots": ["node_modules/playwright/types"],
+      "types": ["node", "mocha"],
+      "noImplicitAny": false
+    },
+    "exclude": [
+      "node_modules"
+    ]
+  }
