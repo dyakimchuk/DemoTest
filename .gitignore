@@ -1,3 +1,5 @@
 node_modules/
 compiled/
 screenshots/
+allure-report/
+allure-results/
