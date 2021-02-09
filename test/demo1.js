@@ -2,7 +2,7 @@ const { webkit, chromium } = require("playwright");
 const name = "sceenname" + new Date();
 let safari, chrome;
 
-describe("My First Suite", () => {
+xdescribe("My First JS Suite", () => {
   before(async () => {
     safari = await webkit.launch();
     chrome = await chromium.launch({ headless: false, slowMo: 50 });
