@@ -3,3 +3,4 @@ compiled/
 screenshots/
 allure-report/
 allure-results/
+.vscode/

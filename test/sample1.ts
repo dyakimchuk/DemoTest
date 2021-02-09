@@ -1,8 +1,9 @@
-import { Page ,chromium} from 'playwright';
-let page:Page;
+import { Page, chromium } from 'playwright';
+let page: Page;
+const name = "sceenname" + new Date();
 
 
-describe("My Typescript Suite", () => {
+describe("Typescript Suite", () => {
   before(async () => {
     page = await (await chromium.launch({ headless: false, slowMo: 50 })).newPage()
   })
@@ -20,5 +21,15 @@ describe("My Typescript Suite", () => {
     await page.keyboard.press('F2');
     await page.waitForTimeout(5000)
     await navigate('https://webdriver.io/docs/gettingstarted.html', 5000)
+    await page.screenshot({ path: `screenshots/chrome_2_${name}.png` });
   });
+
+  it("TS it 2", async () => {
+    //const page = await chromium.newPage();
+    await page.goto("http://google.com");
+    await page.screenshot({ path: `screenshots/chrome_2_${name}.png` });
+    await page.waitForTimeout(1000);
+    //await chromium.();
+  });
+
 });

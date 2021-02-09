@@ -3,7 +3,7 @@ module.exports = {
   bail: true,
   slow: 1000,
   //recursive: true,
-  file: ["compiled/test/demo2.js"],
+  file: ["compiled/test/sample1.js"],
   timeout: 30 * 1000,
- // reporter: ['spec', 'mocha-allure-reporter']
+  // reporter: ['spec', 'mocha-allure-reporter']
 };
